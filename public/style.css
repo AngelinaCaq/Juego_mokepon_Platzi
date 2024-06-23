@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(218, 163, 213);
+}
+
+.titulo{
+    font-size: 40px;
+    border: 5px solid rgba(255,255,255,.1);
+    border-radius: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(243, 231, 250);
+    width: 200px;
+    height: 60px;
+    background-color: rgb(110, 88, 167);
+}
+
+.subtitulo{
+    font-size: 30px;
+    color: rgb(70, 49, 52);
+}
+
+.subtitulo-mapa{
+    font-size: 30px;
+    color: rgb(70, 49, 52);
+}
+
+#seleccionar-mascota{
+    font-size: 20px;
+    color: rgb(54, 23, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-mokepon{
+    background-color: rgb(213, 199, 226);
+    height: 140px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px double #894783;
+    border-radius: 10px;
+    display: flex;
+}
+
+.tarjeta-mokepon img {
+    width: 100px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: rgb(177, 138, 187);
+}
+
+.tarjetas, .botones-ataque{
+    display: flex;
+    gap: 10px;
+}
+
+#boton-mascota{
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+
+#mensajes{
+    border-radius: 30px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 6, 36);
+    width: 200px;
+    height: 105px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    margin-bottom: 10px;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border: transparent;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.ataques{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 180px 180px;
+    
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 6px groove blueviolet;
+    border-radius: 20px;
+}
+
+#ver-mapa button{
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 5px;
+    background: transparent;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 694px){
+    .tarjetas, .botones-ataque{
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 360px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }   
+}
+
